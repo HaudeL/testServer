@@ -1,12 +1,9 @@
 const express = require('express');
 const app = express();
 
-app.get('/vehicule', (req, res) => {
-    res.send("Oh la belle rouge");
-})
-//app.get('/', (req, res) => {
-   // res.send("Hello World !");
-//});
-app.listen(8080,function(){
-    console.log('listening on port 8080');
+app.post('/vehicule', (req, res) => {
+    req.body('');
+  });
+app.listen(3030,function(){
+    console.log('listening on port 3030');
 });
